@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/css/base.css" />
+    <title>QPython Web Editor</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav">
+            <div class="nav-control">
+                <a href="#">QPython Editor</a>
+                <span class="top-btn">
+                    <span class="open btn">&#xe606;</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="Wrapper">
+
+        <!-- 文件路径 -->
+        <div class="file-path">
+        </div>
+
+        <!-- 左边盒子 -->
+        <div class="left-bar">
+            <div class="file-tree"></div>
+        </div>
+
+        <!-- 中间盒子 -->
+        <div class="main">
+            <div class="file-tap"></div>
+            <div class="editor">
+                <label><textarea spellcheck="false"></textarea></label>
+            </div>
+        </div>
+
+        <!-- 右边盒子暂时未使用 -->
+        <div class="right-bar"></div>
+
+        <!-- 底部盒子 -->
+        <div class="bottom">
+            <div class="bottom-btn">
+                <span id="left">&#xe602;</span><span id="right">&#xe604;</span><span id="save">&#xe60a;</span><span id="run">&#xe607;</span>
+            </div>
+        </div>
+    </div>
+    <!--<div class="alert-box" style="background: rgba(0, 0, 0, 0.2);"><div style="width: 380px; opacity: 1; margin: 0px auto;"><div class="box-title">Open project<span class="switch icon btn"></span></div><div class="project-path">Choose project</div><div class="file-tree"></div><div class="file-btn"><span class="btn ok">OK</span><span class="btn" onclick="del_alert_box($(this));">Cancel</span></div></div></div>-->
+
+<div class="alert-box" style="background: rgba(0, 0, 0, 0.2);"><div style="width: 380px; opacity: 1; margin: 0px auto;"><div class="box-title"><span class="switch">File</span><span class="focus">Project</span><hr></div><div class="file-path">Choose file</div><div class="file-tree">Loading ...</div><div class="file-btn"><span class="btn ok">Ok</span><span class="btn" onclick="del_alert_box($(this));">Cancel</span></div></div></div>
+<script type="text/javascript" language="javascript" charset="UTF-8" src="static/js/jquery191.js"></script>
+<script type="text/javascript" language="javascript" charset="UTF-8" src="static/js/base.js"></script>
+</body>
+</html>
